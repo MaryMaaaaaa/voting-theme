@@ -232,7 +232,12 @@ export default function App() {
             canDelete={selectedEntry.ownerId === userId}
             onBack={() => setSelectedEntry(null)} 
             onVote={(e, id) => handleVote(e, id)}
-            onDelete={() => handleDeleteEntry(selectedEntry.id)}
+            onDelete={() => {
+              console.log('Deleting entry:', selectedEntry.id);
+              console.log('Current userId:', userId);
+              console.log('Entry ownerId:', selectedEntry.ownerId);
+              handleDeleteEntry(selectedEntry.id);
+            }}
             onNext={() => {
               const currentIndex = artworks.findIndex(a => a.id === selectedEntry.id);
               const nextIndex = (currentIndex + 1) % artworks.length;

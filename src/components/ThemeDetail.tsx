@@ -165,7 +165,7 @@ export const ThemeDetail = ({ theme, isVoted, canDelete, onBack, onNext, onPrev,
                 <span className="border-l border-gray-500 pl-2 ml-1 text-gray-400">{theme.votes}</span>
               </Button>
 
-              {canDelete && (
+              {canDelete ? (
                 <Button 
                   onClick={onDelete}
                   variant="outline"
@@ -175,6 +175,10 @@ export const ThemeDetail = ({ theme, isVoted, canDelete, onBack, onNext, onPrev,
                   <Trash2 className="h-4 w-4 mr-2" />
                   Delete
                 </Button>
+              ) : (
+                <span className="text-xs text-gray-600 italic">
+                  {/* Debug: canDelete={String(canDelete)}, ownerId={theme.ownerId} */}
+                </span>
               )}
             </div>
           </div>

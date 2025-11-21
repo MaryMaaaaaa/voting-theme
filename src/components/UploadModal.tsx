@@ -300,7 +300,7 @@ export const UploadModal = ({ isOpen, onClose, onSubmit, userId }: UploadModalPr
             className="bg-blue-600 hover:bg-blue-700" 
             disabled={!isFormValid || uploading}
           >
-            {uploading ? '上传中...' : 'Submit Entry'}
+            {uploading ? 'Uploading...' : 'Submit Entry'}
           </Button>
         </DialogFooter>
       </DialogContent>

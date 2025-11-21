@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from './ui/button';
-import docsLogo from '../assets/docs.png';
+import docsLogo from '../assets/docs-brand.png';
 
 interface HeaderProps {
   onUploadClick?: () => void;

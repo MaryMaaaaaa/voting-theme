@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from './ui/button';
-import iconImage from 'figma:asset/ab1a3bc4c79e8086615a184fa1ef00c09456fe04.png';
+import { FileText } from 'lucide-react';
 
 interface HeaderProps {
   onUploadClick?: () => void;
@@ -12,7 +12,9 @@ export const Header = ({ onUploadClick, onAboutClick, onHomeClick }: HeaderProps
   return (
     <header className="w-full py-4 px-6 flex items-center justify-between bg-white border-b border-gray-100">
       <div className="flex items-center gap-2 cursor-pointer" onClick={onHomeClick}>
-        <img src={iconImage} alt="Logo" className="h-8 w-8 object-contain" />
+        <div className="h-8 w-8 bg-blue-600 rounded-lg flex items-center justify-center">
+          <FileText className="h-5 w-5 text-white" />
+        </div>
         <span className="font-bold text-xl tracking-tight text-gray-900">Docs theme</span>
       </div>
       

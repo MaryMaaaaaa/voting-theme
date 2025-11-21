@@ -79,8 +79,8 @@ export default function App() {
       setArtworks(formattedData);
     } catch (error) {
       console.error('加载作品失败:', error);
-      // 如果加载失败，使用默认数据
-      setArtworks(ARTWORKS);
+      // 如果加载失败，显示空数组
+      setArtworks([]);
     } finally {
       setLoading(false);
     }

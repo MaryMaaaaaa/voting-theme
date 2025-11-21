@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from './ui/button';
-import { FileText } from 'lucide-react';
+import docsLogo from '../assets/docs.png';
 
 interface HeaderProps {
   onUploadClick?: () => void;
@@ -12,9 +12,7 @@ export const Header = ({ onUploadClick, onAboutClick, onHomeClick }: HeaderProps
   return (
     <header className="w-full py-4 px-6 flex items-center justify-between bg-white border-b border-gray-100">
       <div className="flex items-center gap-2 cursor-pointer" onClick={onHomeClick}>
-        <div className="h-8 w-8 bg-blue-600 rounded-lg flex items-center justify-center">
-          <FileText className="h-5 w-5 text-white" />
-        </div>
+        <img src={docsLogo} alt="Docs Logo" className="h-8 w-8 object-contain" />
         <span className="font-bold text-xl tracking-tight text-gray-900">Docs theme</span>
       </div>
       

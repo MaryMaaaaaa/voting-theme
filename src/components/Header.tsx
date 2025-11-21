@@ -13,7 +13,7 @@ export const Header = ({ onUploadClick, onAboutClick, onHomeClick }: HeaderProps
     <header className="w-full py-4 px-6 flex items-center justify-between bg-white border-b border-gray-100">
       <div className="flex items-center gap-2 cursor-pointer" onClick={onHomeClick}>
         <img src={iconImage} alt="Logo" className="h-8 w-8 object-contain" />
-        <span className="font-bold text-xl tracking-tight text-gray-900">Docs team</span>
+        <span className="font-bold text-xl tracking-tight text-gray-900">Docs theme</span>
       </div>
       
       <nav className="flex items-center gap-4">

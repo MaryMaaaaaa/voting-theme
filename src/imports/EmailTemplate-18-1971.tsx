@@ -1,5 +1,5 @@
 import svgPaths from "./svg-ha9zioh1lu";
-import imgFrame14 from "../assets/frame-14.png";
+import imgCover1234 from "../assets/cover-1234.png";
 import img63A4B8Eb7877E10018Fd635611 from "figma:asset/bc4d1ebeac1fca48e86ff6b957a8b764f3861833.png";
 import imgJellycatPeanutPenguinLarge31200X1 from "figma:asset/1757bbe232b53c925cf150b9e8bf948627bb7402.png";
 import img1Af16E3D2A6E4610997982Ee9D273B9E1 from "figma:asset/b1b52c81bc9328130d752f761414cf05674c037d.png";
@@ -49,7 +49,7 @@ function Frame7() {
   return (
     <div className="bg-white h-[320px] overflow-clip relative rounded-[12px] shrink-0 w-[528px]">
       <div className="absolute h-[668.303px] left-[-28.32px] top-[-76.6px] w-[576.755px]">
-        <img alt="" className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full" src={imgFrame14} />
+        <img alt="" className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full" src={imgCover1234} />
       </div>
     </div>
   );
@@ -159,7 +159,7 @@ function HeadingAndBody3() {
     <div className="content-stretch flex flex-col gap-[24px] h-[48px] items-start relative shrink-0 w-full" data-name="Heading and body">
       <ul className="block font-['Inter:Regular',sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#555555] text-[16px] w-full">
         <li className="ms-[24px]">
-          <span className="leading-[24px]">{`Submission Deadline (end of day): `}</span>
+          <span className="leading-[24px]">{`Submission Deadline: `}</span>
         </li>
       </ul>
     </div>

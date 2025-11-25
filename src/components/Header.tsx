@@ -17,7 +17,7 @@ export const Header = ({ onUploadClick, onAboutClick, onHomeClick }: HeaderProps
       </div>
       
       <nav className="flex items-center gap-4">
-        <Button variant="ghost" className="text-black font-medium hover:bg-gray-100" onClick={onAboutClick}>About event</Button>
+        <Button variant="ghost" className="text-black font-medium hover:bg-gray-100" onClick={onAboutClick}>About contest</Button>
         <Button variant="ghost" className="text-black font-medium hover:bg-gray-100" onClick={() => window.open('https://dg01web.zoom.us/launch/chat/v2/eyJzaWQiOiIxMmVjNTBjYzQ2ODg0ZmIzYTc1YjNhMjM4YjVhNGIwYUBjb25mZXJlbmNlLnhtcHAuem9vbS51cyJ9', '_blank')}>Contact us</Button>
         <Button 
           className="font-medium bg-blue-600 text-white hover:bg-blue-700"

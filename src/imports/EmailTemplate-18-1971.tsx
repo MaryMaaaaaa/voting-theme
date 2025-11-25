@@ -1,5 +1,5 @@
 import svgPaths from "./svg-ha9zioh1lu";
-import imgKling20251114411401 from "figma:asset/e033a586cb3e9297815f0e233301066d59480a09.png";
+import imgFrame14 from "../assets/frame-14.png";
 import img63A4B8Eb7877E10018Fd635611 from "figma:asset/bc4d1ebeac1fca48e86ff6b957a8b764f3861833.png";
 import imgJellycatPeanutPenguinLarge31200X1 from "figma:asset/1757bbe232b53c925cf150b9e8bf948627bb7402.png";
 import img1Af16E3D2A6E4610997982Ee9D273B9E1 from "figma:asset/b1b52c81bc9328130d752f761414cf05674c037d.png";
@@ -48,8 +48,8 @@ function EmailTemplateHeader() {
 function Frame7() {
   return (
     <div className="bg-white h-[320px] overflow-clip relative rounded-[12px] shrink-0 w-[528px]">
-      <div className="absolute h-[668.303px] left-[-28.32px] top-[-76.6px] w-[576.755px]" data-name="kling_20251114_图生图_转化成手绘线条风格_4114_0 1">
-        <img alt="" className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full" src={imgKling20251114411401} />
+      <div className="absolute h-[668.303px] left-[-28.32px] top-[-76.6px] w-[576.755px]">
+        <img alt="" className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full" src={imgFrame14} />
       </div>
     </div>
   );
@@ -63,8 +63,8 @@ function HeadingAndBody() {
           <span className="text-[#222222]">{`Hi everyone `}</span>👋 ,
         </p>
         <p className="leading-[24px] text-[16px]">
-          Join the<span className="font-['Inter:Semi_Bold',sans-serif] font-semibold not-italic text-[#222222]">{` Docs theme co-creation event -`}</span>
-          <span>{` unleash your creativity and bring Docs to life across every scenario!`}</span>
+          Join the<span className="font-['Inter:Semi_Bold',sans-serif] font-semibold not-italic text-[#222222]">{` Docs theme contest -`}</span>
+          <span>{` unleash your creativity and bring Docs to life across every scenario!`}</span>
         </p>
       </div>
     </div>
@@ -113,7 +113,7 @@ function HeadingAndBody1() {
     <div className="content-stretch flex flex-col gap-[24px] items-start relative shrink-0 w-full" data-name="Heading and body">
       <div className="font-['Inter:Regular',sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#555555] text-[0px] w-full">
         <p className="leading-[24px] mb-[16px]">
-          <span className="font-['Inter:Semi_Bold',sans-serif] font-semibold not-italic text-[#222222] text-[18px]">Event Directions</span>
+          <span className="font-['Inter:Semi_Bold',sans-serif] font-semibold not-italic text-[#222222] text-[18px]">Contest Directions</span>
           <span className="text-[16px]">
             <br aria-hidden="true" />
             Pick one of the two creative directions or explore both.
@@ -159,7 +159,7 @@ function HeadingAndBody3() {
     <div className="content-stretch flex flex-col gap-[24px] h-[48px] items-start relative shrink-0 w-full" data-name="Heading and body">
       <ul className="block font-['Inter:Regular',sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#555555] text-[16px] w-full">
         <li className="ms-[24px]">
-          <span className="leading-[24px]">{`Submission Deadline: `}</span>
+          <span className="leading-[24px]">{`Submission Deadline (end of day): `}</span>
         </li>
       </ul>
     </div>
@@ -204,9 +204,7 @@ function HeadingAndBody6() {
   return (
     <div className="content-stretch flex flex-col gap-[24px] items-start relative shrink-0 w-full" data-name="Heading and body">
       <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[24px] not-italic relative shrink-0 text-[#222222] text-[16px] w-full">
-        {`Dec 3, 11:59 CST (UTC+8) / `}
-        <br aria-hidden="true" />
-        Dec 2, 19:59 PST (UTC-8)
+        {`December 4`}
       </p>
     </div>
   );
@@ -216,9 +214,7 @@ function HeadingAndBody7() {
   return (
     <div className="content-stretch flex flex-col gap-[24px] items-start relative shrink-0 w-full" data-name="Heading and body">
       <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[24px] not-italic relative shrink-0 text-[#222222] text-[16px] w-full">
-        {`Dec 4-8, CST (UTC+8) / `}
-        <br aria-hidden="true" />
-        Dec 3-7, PST (UTC-8)
+        {`Dec 8-9`}
       </p>
     </div>
   );
@@ -228,9 +224,7 @@ function HeadingAndBody8() {
   return (
     <div className="content-stretch flex flex-col gap-[24px] items-start relative shrink-0 w-full" data-name="Heading and body">
       <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[24px] not-italic relative shrink-0 text-[#222222] text-[16px] w-full">
-        {`Dec 10, CST (UTC+8) / `}
-        <br aria-hidden="true" />
-        Dec 9, PST (UTC-8)
+        {`Dec 11`}
       </p>
     </div>
   );
@@ -259,7 +253,7 @@ function LinkAndText() {
   return (
     <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-full" data-name="Link and text">
       <a href="https://dg01docs.zoom.us/doc/YdlbGmdRSTKwRSNiBZpF-A" target="_blank" rel="noopener noreferrer" className="w-full no-underline">
-        <p className="font-['Inter:Medium',sans-serif] font-medium leading-[24px] not-italic relative shrink-0 text-[#0b5cff] text-[16px] w-full">Event details →</p>
+        <p className="font-['Inter:Medium',sans-serif] font-medium leading-[24px] not-italic relative shrink-0 text-[#0b5cff] text-[16px] w-full">Contest details →</p>
       </a>
     </div>
   );
@@ -491,7 +485,7 @@ function Body() {
   return (
     <div className="bg-white box-border content-stretch flex flex-col gap-[48px] items-center px-[24px] py-[16px] relative shrink-0 w-[576px]" data-name="Body">
       <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[38px] min-w-full not-italic relative shrink-0 text-[#222222] text-[30px] text-center w-[min-content]">
-        Docs theme co-creation
+        Docs theme contest
         <br aria-hidden="true" />
         create, share and win!
       </p>

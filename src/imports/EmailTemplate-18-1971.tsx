@@ -48,9 +48,7 @@ function EmailTemplateHeader() {
 function Frame7() {
   return (
     <div className="bg-white h-[320px] overflow-clip relative rounded-[12px] shrink-0 w-[528px]">
-      <div className="absolute h-[668.303px] left-[-28.32px] top-[-76.6px] w-[576.755px]">
-        <img alt="" className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full" src={imgCover1234} />
-      </div>
+      <img alt="" className="w-full h-full object-cover rounded-[12px]" src={imgCover1234} />
     </div>
   );
 }

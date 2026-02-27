@@ -69,9 +69,42 @@ const ImageUploadField = ({
 
   const handleFile = (file: File) => {
     setFile(file);
+    
+    // 压缩图片以提升加载速度
     const reader = new FileReader();
     reader.onloadend = () => {
-      setUrl(reader.result as string);
+      const img = new Image();
+      img.onload = () => {
+        const canvas = document.createElement('canvas');
+        const ctx = canvas.getContext('2d');
+        
+        // 限制最大尺寸
+        const maxWidth = 1200;
+        const maxHeight = 1200;
+        let width = img.width;
+        let height = img.height;
+        
+        if (width > height) {
+          if (width > maxWidth) {
+            height = (height * maxWidth) / width;
+            width = maxWidth;
+          }
+        } else {
+          if (height > maxHeight) {
+            width = (width * maxHeight) / height;
+            height = maxHeight;
+          }
+        }
+        
+        canvas.width = width;
+        canvas.height = height;
+        ctx?.drawImage(img, 0, 0, width, height);
+        
+        // 转换为较低质量的JPEG以减小文件大小
+        const compressedDataUrl = canvas.toDataURL('image/jpeg', 0.8);
+        setUrl(compressedDataUrl);
+      };
+      img.src = reader.result as string;
     };
     reader.readAsDataURL(file);
   };

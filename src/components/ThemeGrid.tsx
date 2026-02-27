@@ -3,16 +3,14 @@ import { ArtworkCard, ArtworkEntry } from './ArtworkCard';
 import { cn } from './ui/utils';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 
-// Imports from Figma assets and other sources
-import newspaperPreview from "figma:asset/b81cc98d0ded3defa8a90e8e144e25cdc688404e.png";
-import bitterNewCover from "figma:asset/dc344f45e28915af20cde21d3e24cb6fee5b3f06.png";
-import newspaperCover from "figma:asset/da56455993526d3f7d36718bd4b594f77cdf8cae.png";
-import fluidCover from "figma:asset/ea990468e90aebbccdd0af7b3a5aec25d9548b51.png";
-import japanCover from "figma:asset/6075d74544ba8450624ba615b454aff210c322e6.png";
-// New preview image for Fluid and Japanese Design
-import remoteWorkPreview from "figma:asset/517b05c61316e13f307b6d19fcdc3ee560ccd7d5.png";
-// New preview image for Bitter
-import bitterPreview from "figma:asset/92eae5a47023447f35fe04ec929c7dd8b2af5a3a.png";
+// Placeholder URLs for sample data (not currently used - data comes from Supabase)
+const newspaperPreview = "https://via.placeholder.com/400x300";
+const bitterNewCover = "https://via.placeholder.com/400x300";
+const newspaperCover = "https://via.placeholder.com/400x300";
+const fluidCover = "https://via.placeholder.com/400x300";
+const japanCover = "https://via.placeholder.com/400x300";
+const remoteWorkPreview = "https://via.placeholder.com/400x300";
+const bitterPreview = "https://via.placeholder.com/400x300";
 
 export const ARTWORKS: ArtworkEntry[] = [
   {

@@ -1,6 +1,6 @@
 import svgPaths from "./svg-ha9zioh1lu";
 import imgCover1234 from "../assets/cover-1234.png";
-import imgKindle from "../assets/Kindle.jpg";
+import imgKindle from "../assets/Kindle.png";
 import imgJellycat from "../assets/Jellycat.png";
 import imgBrand from "../assets/Brand.png";
 

@@ -1,8 +1,5 @@
 import svgPaths from "./svg-ha9zioh1lu";
 import imgCover1234 from "../assets/cover-1234.png";
-import img63A4B8Eb7877E10018Fd635611 from "figma:asset/bc4d1ebeac1fca48e86ff6b957a8b764f3861833.png";
-import imgJellycatPeanutPenguinLarge31200X1 from "figma:asset/1757bbe232b53c925cf150b9e8bf948627bb7402.png";
-import img1Af16E3D2A6E4610997982Ee9D273B9E1 from "figma:asset/b1b52c81bc9328130d752f761414cf05674c037d.png";
 
 function DocsBrand() {
   return (
@@ -305,7 +302,7 @@ function Frame() {
   return (
     <div className="bg-white h-[208px] overflow-clip relative rounded-[12px] shrink-0 w-[252px]">
       <div className="absolute h-[208px] left-[-122.41px] top-0 w-[416px]" data-name="63a4b8eb7877e10018fd6356 (1) 1">
-        <img alt="" className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full" src={img63A4B8Eb7877E10018Fd635611} />
+        <img alt="Kindle Prize" className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full" src="https://via.placeholder.com/416x208/e5e5e5/999999?text=Kindle" />
       </div>
     </div>
   );
@@ -360,7 +357,7 @@ function Group() {
   return (
     <div className="absolute contents left-[27.13px] top-[10.25px]">
       <div className="absolute left-[27.13px] size-[197.749px] top-[10.25px]" data-name="Jellycat-Peanut-Penguin-Large-3_1200x 1">
-        <img alt="" className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full" src={imgJellycatPeanutPenguinLarge31200X1} />
+        <img alt="Jellycat Plush Toy" className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full" src="https://via.placeholder.com/197x197/f0f0f0/999999?text=Jellycat" />
       </div>
     </div>
   );
@@ -391,7 +388,7 @@ function Group1() {
     <div className="absolute contents left-0 top-0">
       <div className="absolute h-[245.483px] left-0 top-0 w-[253.114px]" data-name="1AF16E3D-2A6E-4610-9979-82EE9D273B9E 1">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <img alt="" className="absolute h-[103.11%] left-0 max-w-none top-[-3.11%] w-full" src={img1Af16E3D2A6E4610997982Ee9D273B9E1} />
+          <img alt="Brand Magazine" className="absolute h-[103.11%] left-0 max-w-none top-[-3.11%] w-full" src="https://via.placeholder.com/253x245/f5f5f5/999999?text=Magazine" />
         </div>
       </div>
       <div className="absolute bg-[#f8f8f8] h-[16.758px] left-[96.89px] top-[46.29px] w-[59.726px]" />

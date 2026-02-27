@@ -400,9 +400,9 @@ function Group1() {
 
 function Frame11() {
   return (
-    <div className="bg-white h-[208px] relative rounded-[12px] shrink-0 w-[252px]">
-      <div className="h-[208px] overflow-clip relative rounded-[inherit] w-[252px]">
-        <Group1 />
+    <div className="bg-white h-[252px] relative rounded-[12px] shrink-0 w-[252px]">
+      <div className="h-[252px] overflow-clip relative rounded-[inherit] w-[252px] flex items-center justify-center">
+        <img alt="Brand Magazine" className="max-w-full max-h-full object-contain pointer-events-none" src={imgBrand} />
       </div>
       <div aria-hidden="true" className="absolute border border-[#dfe3e8] border-solid inset-0 pointer-events-none rounded-[12px]" />
     </div>

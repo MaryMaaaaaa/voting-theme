@@ -38,20 +38,8 @@ export default function App() {
   useEffect(() => {
     loadArtworks();
 
-    // 订阅实时更新
-    const channel = supabase
-      .channel('artworks_changes')
-      .on('postgres_changes', 
-        { event: '*', schema: 'public', table: 'artworks' }, 
-        () => {
-          loadArtworks();
-        }
-      )
-      .subscribe();
-
-    return () => {
-      supabase.removeChannel(channel);
-    };
+    // 实时订阅功能已禁用以避免网络连接问题
+    // 用户操作后会自动刷新数据
   }, []);
 
   const loadArtworks = async () => {
@@ -115,7 +103,8 @@ export default function App() {
 
       if (error) throw error;
 
-      // 实时订阅会自动更新列表，无需手动添加
+      // 上传成功后重新加载数据
+      await loadArtworks();
     } catch (error) {
       console.error('上传作品失败:', error);
       alert('上传失败，请重试');
@@ -134,6 +123,9 @@ export default function App() {
       if (selectedEntry?.id === id) {
         setSelectedEntry(null);
       }
+      
+      // 删除成功后重新加载数据
+      await loadArtworks();
     } catch (error) {
       console.error('删除作品失败:', error);
       alert('删除失败，请重试');
@@ -181,6 +173,9 @@ export default function App() {
         setVotedEntryId(id);
         localStorage.setItem('votedEntryId', id);
       }
+      
+      // 投票成功后重新加载数据
+      await loadArtworks();
     } catch (error) {
       console.error('投票失败:', error);
       alert('投票失败，请重试');
